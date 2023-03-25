@@ -18,6 +18,12 @@ h1 {
     color: #0a1b18;
 }
 
+p {
+    font-family: bona nova, sans-serif;
+    font-size: 150%;
+    color: #0a1b18;
+}
+
 div {
     font-family: bona nova, sans-serif;
     font-size: 110%;

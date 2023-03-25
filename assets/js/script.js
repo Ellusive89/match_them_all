@@ -86,7 +86,7 @@ function flipCard() {
     cardChosenId.push(this.dataset.name);
 
     if (cardChosen.length === 2) {
-        setTimeout(checkForMatch, 500);
+        setTimeout(checkForMatch, 200);
     }
 }
 
