@@ -16,7 +16,6 @@ h1 {
     font-family: lobster, sans-serif;
     font-size: 450%;
     color: #0a1b18;
-    text-align: center;
 }
 
 div {
@@ -75,7 +74,6 @@ button:hover {
 
 /* adding style to the game cards */
 .memory-card {
-    background-color: transparent;
     width: 100px;
     height: 100px;
     position: relative;
