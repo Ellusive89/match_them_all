@@ -11,7 +11,7 @@ const cardList = [
     {name: "ariel", image: "assets/images/ariel.png"},
     {name: "aurora", image: "assets/images/aurora.png"},
     {name: "belle", image: "assets/images/belle.png"},
-    {name: "cinderella", image: "assets/images/cinderella"},
+    {name: "cinderella", image: "assets/images/cinderella.png"},
     {name: "elsa", image: "assets/images/elsa.png"},
     {name: "jasmine", image: "assets/images/jasmine.png"},
     {name: "merida", image: "assets/images/merida.png"},
@@ -73,6 +73,7 @@ function createBoard() {
     }
 }
 
+// creating function for flipping sides of the game cards
 function flipCard() {
     if (this === cardChosen[0]) return;
     this.classList.add('flip');
