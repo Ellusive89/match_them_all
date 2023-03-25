@@ -1,5 +1,11 @@
-// card items array
-const cardItm = [
+let moves = document.getElementById("moves-count");
+let time = document.getElementById("time");
+const startButton = document.getElementById("start");
+const stopButton = document.getElementById("stop");
+
+
+// card list array
+const cardList = [
     {name: "anna", image: "anna.png"},
     {name: "ariel", image: "ariel.png"},
     {name: "aurora", image: "aurora.png"},
@@ -16,3 +22,26 @@ const cardItm = [
     {name: "snow_white", image: "snow_white.png"},
     {name: "tiana", image: "tiana.png"}
 ];
+
+let cardDeck;
+let board = [];
+const rows = 6;
+const columns = 5;
+
+function shuffleCards() {
+// double the card list to create pairs
+cardDeck = cardList.concat(cardList);
+console.log(cardDeck)
+// shuffle cards
+for (let i=0; i < cardDeck.length; i++){
+    //get random card list
+  let j = Math.floor(Math.random() * cardDeck.length);
+  let shuffled = cardDeck[i];
+  cardDeck[i] = cardDeck[j];
+  cardDeck[j] = shuffled;
+  }
+  console.log(cardDeck);
+}
+
+
+
