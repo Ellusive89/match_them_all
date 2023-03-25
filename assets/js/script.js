@@ -5,6 +5,7 @@ const stopButton = document.getElementById("stop");
 const gameContainer = document.getElementById("game-box");
 
 
+
 // card list array
 const cardList = [
     {name: "anna", image: "assets/images/anna.png"},
@@ -110,6 +111,18 @@ function checkForMatch() {
         alert(`Congratulations! You've won! Moves: ${moveCounter}, Time: ${minutes} minutes ${seconds} seconds.`);
     }
 }
+//function to show position of all the cards on the board 
+function showAllCards() {
+    const cards = document.querySelectorAll('.memory-card');
+    cards.forEach(card => {
+      card.classList.add('flip');
+    });
+    setTimeout(() => {
+      cards.forEach(card => {
+        card.classList.remove('flip');
+      });
+    }, 2000);
+  }
 // start and stop button function
 startButton.addEventListener('click', () => {
     shuffleCards();
