@@ -5,6 +5,11 @@
 
 body {
     background-color: #4edabd;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -24,9 +29,14 @@ div {
 button {
     cursor: pointer;
     font-family: bona nova, sans-serif;
-    font-size: 120%;
+    font-size: 200%;
     color: #0a1b18;
     padding: 5px;
+    margin: auto;
+}
+
+button.hide {
+    display: none;
 }
 
 button:hover {
@@ -37,20 +47,28 @@ button:hover {
 
 /* centering game area on the screen */
 .game {
-    position: absolute;
-    box-sizing: border-box;
-    padding: 3px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: antiquewhite;
-    border: 3px solid #0a1b18; 
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #0a1b18;
+    background-color: blanchedalmond;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+.stats-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 .game-box {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-gap: 10px;
     margin-bottom: 1rem;
 }
@@ -81,7 +99,11 @@ button:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.front-face {
-    transform: rotateY(-180deg);
+.controls-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
 }
 
