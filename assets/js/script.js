@@ -2,7 +2,7 @@ let moves = document.getElementById("moves-count");
 let time = document.getElementById("time");
 const startButton = document.getElementById("start");
 const stopButton = document.getElementById("stop");
-const gameBox = document.getElementsByClassName("game-box");
+const gameContainer = document.getElementById("game-box");
 
 
 // card list array
@@ -78,7 +78,18 @@ function createBoard() {
 
         card.addEventListener("click", flipCard);
 
-        gameBox.appendChild(card);
+        gameContainer.appendChild(card);
+    }
+}
+
+function flipCard() {
+    if (this === cardChosen[0]) return;
+    this.classList.add('flip');
+    cardChosen.push(this);
+    cardChosenId.push(this.dataset.name);
+
+    if (cardChosen.length === 2) {
+        setTimeout(checkForMatch, 500);
     }
 }
 
