@@ -47,3 +47,41 @@ button:hover {
     border: 3px solid #0a1b18; 
 }
 
+.game-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 1rem;
+}
+
+/* adding style to the game cards */
+.memory-card {
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.memory-card.flip .front-face,
+.memory-card.flip .back-face {
+    transform: rotateY(0deg);
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.front-face {
+    transform: rotateY(-180deg);
+}
+

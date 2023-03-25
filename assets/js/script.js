@@ -2,6 +2,7 @@ let moves = document.getElementById("moves-count");
 let time = document.getElementById("time");
 const startButton = document.getElementById("start");
 const stopButton = document.getElementById("stop");
+const gameBox = document.getElementsByClassName("game-box");
 
 
 // card list array
@@ -28,6 +29,7 @@ let board = [];
 const rows = 6;
 const columns = 5;
 
+
 function shuffleCards() {
 // double the card list to create pairs
 cardDeck = cardList.concat(cardList);
@@ -42,6 +44,33 @@ for (let i=0; i < cardDeck.length; i++){
   }
   console.log(cardDeck);
 }
+
+//creating game board
+function createBoard() {
+    for (let i = 0; i < cardDeck.length; i++) {
+        const card = document.createElement("div");
+        card.classList.add("memory-card");
+        card.dataset.name = cardDeck[i].name;
+
+        const frontFace = document.createElement("div");
+        frontFace.classList.add("front-face");
+        frontFace.style.backgroundImage = `url(${cardDeck[i].image})`;
+
+        const backFace = document.createElement("div");
+        backFace.classList.add("back-face");
+        backFace.style.backgroundImage = 'url(assets/images/question_mark.png)';
+
+        card.appendChild(frontFace);
+        card.appendChild(backFace);
+
+        card.addEventListener("click", flipCard);
+
+        gameBox.appendChild(card);
+    }
+}
+
+
+
 
 
 
