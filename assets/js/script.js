@@ -6,21 +6,21 @@ const stopButton = document.getElementById("stop");
 
 // card list array
 const cardList = [
-    {name: "anna", image: "anna.png"},
-    {name: "ariel", image: "ariel.png"},
-    {name: "aurora", image: "aurora.png"},
-    {name: "belle", image: "belle.png"},
-    {name: "cinderella", image: "cinderella"},
-    {name: "elsa", image: "elsa.png"},
-    {name: "jasmine", image: "jasmine.png"},
-    {name: "merida", image: "merida.png"},
-    {name: "mirabel", image: "mirabel.png"},
-    {name: "moana", image: "moana.png"},
-    {name: "mulan", image: "mulan.png"},
-    {name: "pocahontas", image: "pocahontas.png"},
-    {name: "rapunzel", image: "rapunzel.png"},
-    {name: "snow_white", image: "snow_white.png"},
-    {name: "tiana", image: "tiana.png"}
+    {name: "anna", image: "assets/images/anna.png"},
+    {name: "ariel", image: "assets/images/ariel.png"},
+    {name: "aurora", image: "assets/images/aurora.png"},
+    {name: "belle", image: "assets/images/belle.png"},
+    {name: "cinderella", image: "assets/images/cinderella"},
+    {name: "elsa", image: "assets/images/elsa.png"},
+    {name: "jasmine", image: "assets/images/jasmine.png"},
+    {name: "merida", image: "assets/images/merida.png"},
+    {name: "mirabel", image: "assets/images/mirabel.png"},
+    {name: "moana", image: "assets/images/moana.png"},
+    {name: "mulan", image: "assets/images/mulan.png"},
+    {name: "pocahontas", image: "assets/images/pocahontas.png"},
+    {name: "rapunzel", image: "assets/images/rapunzel.png"},
+    {name: "snow_white", image: "assets/images/snow_white.png"},
+    {name: "tiana", image: "assets/images/tiana.png"}
 ];
 
 let cardDeck;
