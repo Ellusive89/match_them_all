@@ -32,7 +32,10 @@ const columns = 6;
 let cardChosen = [];
 let cardChosenId = [];
 let cardsWon = [];
+let timer;
 let moveCounter = 0;
+let seconds = 0;
+let minutes = 0;
 
 
 function shuffleCards() {
@@ -111,6 +114,7 @@ function checkForMatch() {
         alert(`Congratulations! You've won! Moves: ${moveCounter}, Time: ${minutes} minutes ${seconds} seconds.`);
     }
 }
+
 //function to show position of all the cards on the board 
 function showAllCards() {
     const cards = document.querySelectorAll('.memory-card');
@@ -123,6 +127,22 @@ function showAllCards() {
       });
     }, 2000);
   }
+
+// function for counting how long it took to match all cards
+function updateTimer() {
+    seconds++;
+  
+    if (seconds >= 60) {
+      seconds = 0;
+      minutes++;
+    }
+  
+    let minutesDisplay = minutes < 10 ? `0${minutes}` : minutes;
+    let secondsDisplay = seconds < 10 ? `0${seconds}` : seconds;
+    
+    time.textContent = `Time: ${minutesDisplay}:${secondsDisplay}`;
+  }
+
 // start and stop button function
 startButton.addEventListener('click', () => {
     shuffleCards();
