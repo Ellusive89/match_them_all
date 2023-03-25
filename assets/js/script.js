@@ -26,21 +26,8 @@ const cardList = [
 
 let cardDeck;
 let board = [];
-const rows = 6;
-const columns = 5;
-
-/* start and stop button function */
-startButton.addEventListener('click', () => {
-    shuffleCards();
-    createBoard();
-    startButton.classList.add('hide');
-    stopButton.classList.remove('hide');
-    timer = setInterval(updateTimer, 1000);
-});
-
-stopButton.addEventListener('click', () => {
-    location.reload();
-});
+const rows = 5;
+const columns = 6;
 
 
 function shuffleCards() {
@@ -93,6 +80,20 @@ function flipCard() {
     }
 }
 
+// start and stop button function
+startButton.addEventListener('click', () => {
+    shuffleCards();
+    createBoard();
+    showAllCards();
+    gameDiv.style.display = "flex";
+    startButton.classList.add('hide');
+    stopButton.classList.remove('hide');
+    timer = setInterval(updateTimer, 1000);
+});
+
+stopButton.addEventListener('click', () => {
+    location.reload();
+});
 
 
 
