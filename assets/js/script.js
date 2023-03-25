@@ -29,13 +29,26 @@ let board = [];
 const rows = 6;
 const columns = 5;
 
+/* start and stop button function */
+startButton.addEventListener('click', () => {
+    shuffleCards();
+    createBoard();
+    startButton.classList.add('hide');
+    stopButton.classList.remove('hide');
+    timer = setInterval(updateTimer, 1000);
+});
+
+stopButton.addEventListener('click', () => {
+    location.reload();
+});
+
 
 function shuffleCards() {
 // double the card list to create pairs
 cardDeck = cardList.concat(cardList);
 console.log(cardDeck)
 // shuffle cards
-for (let i=0; i < cardDeck.length; i++){
+for (let i = 0; i < cardDeck.length; i++){
     //get random card list
   let j = Math.floor(Math.random() * cardDeck.length);
   let shuffled = cardDeck[i];
