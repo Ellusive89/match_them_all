@@ -28,6 +28,10 @@ let cardDeck;
 let board = [];
 const rows = 5;
 const columns = 6;
+let cardChosen = [];
+let cardChosenId = [];
+let cardsWon = [];
+let moveCounter = 0;
 
 
 function shuffleCards() {
@@ -80,6 +84,31 @@ function flipCard() {
     }
 }
 
+// checking if two cards match
+function checkForMatch() {
+    const [cardOne, cardTwo] = cardChosen;
+    const [idOne, idTwo] = cardChosenId;
+
+    if (idOne === idTwo) {
+        cardOne.removeEventListener('click', flipCard);
+        cardTwo.removeEventListener('click', flipCard);
+        cardsWon.push(cardOne);
+        cardsWon.push(cardTwo);
+    } else {
+        cardOne.classList.remove('flip');
+        cardTwo.classList.remove('flip');
+    }
+
+    cardChosen = [];
+    cardChosenId = [];
+    moveCounter++;
+    moves.textContent = `Moves: ${moveCounter}`; //counting how many moves it took to match all cards
+
+    if (cardsWon.length === cardDeck.length) {
+        clearInterval(timer);
+        alert(`Congratulations! You've won! Moves: ${moveCounter}, Time: ${minutes} minutes ${seconds} seconds.`);
+    }
+}
 // start and stop button function
 startButton.addEventListener('click', () => {
     shuffleCards();
