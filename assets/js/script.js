@@ -2,6 +2,7 @@ let moves = document.getElementById("moves-count");
 let time = document.getElementById("time");
 const startButton = document.getElementById("start");
 const stopButton = document.getElementById("stop");
+const gameDiv = document.querySelector(".game");
 const gameContainer = document.getElementById("game-box");
 
 

@@ -83,9 +83,20 @@ button:hover {
     cursor: pointer;
 }
 
-.memory-card.flip .front-face,
-.memory-card.flip .back-face {
+.memory-card .front-face {
+    transform: rotateY(-180deg);
+}
+
+.memory-card.flip .front-face {
     transform: rotateY(0deg);
+} 
+
+.memory-card.flip .back-face {
+    transform: rotateY(180deg);
+}
+
+.memory-card .back-face {
+    background-image: url(assets/images/question_mark.png);
 }
 
 .front-face,
