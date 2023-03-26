@@ -106,15 +106,14 @@ button:hover {
     pointer-events: none;
 }
 
-  @keyframes shake {
+@keyframes shake {
     0% { transform: translateX(0); }
     25% { transform: translateX(-10px) rotate(-5deg); }
     50% { transform: translateX(10px) rotate(5deg); }
     75% { transform: translateX(-10px) rotate(-5deg); }
     100% { transform: translateX(0); }
-  }
+}
   
-
 .memory-card .front-face {
     transform: rotateY(-180deg);
 }
@@ -156,16 +155,16 @@ button:hover {
     justify-content: center;
     align-items: center;
     z-index: 9999;
-  }
+}
 
-  .popup-box {
+.popup-box {
     background-color: #dff6ca;
     padding: 20px;
     border: 5px solid #0a1b18;
     border-radius: 5px;
     text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  }
+}
 
 .popup-box h2 {
     font-family: bona nova, sans-serif;
@@ -173,7 +172,7 @@ button:hover {
     color: #0a1b18;
     text-align: center;
     margin-bottom: 10px;
-  }
+}
 
 .popup-box p {
     font-size: 200%;
@@ -181,9 +180,9 @@ button:hover {
     color: #0a1b18;
     text-align: center;
     margin-bottom: 10px;
-  }
+}
 
-  #popup-close-btn {
+#popup-close-btn {
     font-family: bona nova, sans-serif;
     font-size: 150%;
     color: #0a1b18;
@@ -192,9 +191,9 @@ button:hover {
     cursor: pointer;
     text-align: center;
     margin-bottom: 10px;
-  }
+}
   
-  #popup-close-btn:hover {
+#popup-close-btn:hover {
     transform: scale(1.1);
     color: #70b879;
     background-color: #0a1b18;

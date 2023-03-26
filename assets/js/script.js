@@ -5,8 +5,6 @@ const stopButton = document.getElementById("stop");
 const gameDiv = document.querySelector(".game");
 const gameContainer = document.getElementById("game-box");
 
-
-
 // card list array
 const cardList = [
     {name: "bee", image: "assets/images/bee.png", alt: "little bee"},
@@ -37,7 +35,6 @@ let timer;
 let moveCounter = 0;
 let seconds = 0;
 let minutes = 0;
-
 
 function shuffleCards() {
 // double the card list to create pairs
