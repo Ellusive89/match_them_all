@@ -14,7 +14,7 @@ body {
 
 h1 {
     font-family: lobster, sans-serif;
-    font-size: 450%;
+    font-size: 350%;
     color: #0a1b18;
 }
 
@@ -34,10 +34,14 @@ div {
 button {
     cursor: pointer;
     font-family: bona nova, sans-serif;
-    font-size: 200%;
+    font-size: 150%;
     color: #0a1b18;
     padding: 5px;
     margin: auto;
+}
+
+#start {
+    font-size: 350%;
 }
 
 button.hide {

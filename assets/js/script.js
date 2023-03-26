@@ -9,21 +9,21 @@ const gameContainer = document.getElementById("game-box");
 
 // card list array
 const cardList = [
-    {name: "anna", image: "assets/images/anna.png"},
-    {name: "ariel", image: "assets/images/ariel.png"},
-    {name: "aurora", image: "assets/images/aurora.png"},
-    {name: "belle", image: "assets/images/belle.png"},
-    {name: "cinderella", image: "assets/images/cinderella.png"},
-    {name: "elsa", image: "assets/images/elsa.png"},
-    {name: "jasmine", image: "assets/images/jasmine.png"},
-    {name: "merida", image: "assets/images/merida.png"},
-    {name: "mirabel", image: "assets/images/mirabel.png"},
-    {name: "moana", image: "assets/images/moana.png"},
-    {name: "mulan", image: "assets/images/mulan.png"},
-    {name: "pocahontas", image: "assets/images/pocahontas.png"},
-    {name: "rapunzel", image: "assets/images/rapunzel.png"},
-    {name: "snow_white", image: "assets/images/snow_white.png"},
-    {name: "tiana", image: "assets/images/tiana.png"}
+    {name: "bee", image: "assets/images/bee.png"},
+    {name: "cat", image: "assets/images/cat.png"},
+    {name: "corgi", image: "assets/images/corgi.png"},
+    {name: "cow", image: "assets/images/cow.png"},
+    {name: "elephant", image: "assets/images/elephant.png"},
+    {name: "fox", image: "assets/images/fox.png"},
+    {name: "horse", image: "assets/images/horse.png"},
+    {name: "lama", image: "assets/images/lama.png"},
+    {name: "octopus", image: "assets/images/octopus.png"},
+    {name: "panda", image: "assets/images/panda.png"},
+    {name: "pig", image: "assets/images/pig.png"},
+    {name: "racoon", image: "assets/images/racoon.png"},
+    {name: "sloth", image: "assets/images/sloth.png"},
+    {name: "unicorn", image: "assets/images/unicorn.png"},
+    {name: "whale", image: "assets/images/whale.png"}
 ];
 
 let cardDeck;
@@ -67,7 +67,7 @@ function createBoard() {
 
         const backFace = document.createElement("div");
         backFace.classList.add("back-face");
-        backFace.style.backgroundImage = 'url(assets/images/question_mark.png)';
+        backFace.style.backgroundImage = 'url(assets/images/paw.png)';
 
         card.appendChild(frontFace);
         card.appendChild(backFace);
