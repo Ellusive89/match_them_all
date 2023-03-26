@@ -116,7 +116,21 @@ function checkForMatch() {
 
     if (cardsWon.length === cardDeck.length) {
         clearInterval(timer);
-        alert(`Congratulations! You've won! Moves: ${moveCounter}, Time: ${minutes} minutes ${seconds} seconds.`);
+        
+        // popup message
+        const popupMessage = document.getElementById('popup-message');
+  const popupMoves = document.getElementById('popup-moves');
+  const popupTime = document.getElementById('popup-time');
+  const popupCloseBtn = document.getElementById('popup-close-btn');
+
+  popupMoves.textContent = `${moveCounter}`;
+  popupTime.textContent = `${minutes} minutes ${seconds} seconds`;
+
+  popupMessage.style.display = 'flex';
+
+  popupCloseBtn.addEventListener('click', () => {
+    popupMessage.style.display = 'none';
+        });
     }
 }
 
