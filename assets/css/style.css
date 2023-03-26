@@ -218,8 +218,8 @@ button:hover {
     }
   
     .memory-card {
-      width: 50px;
-      height: 50px;
+      width: 80px;
+      height: 80px;
     }
 
     h1 {
@@ -253,6 +253,25 @@ button:hover {
 
     #popup-close-btn {
         font-size: 110%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .memory-card {
+        width: 40px;
+        height: 40px;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+    
+    p {
+        font-size: 110%;
+    }
+    
+    div {
+        font-size: 100%;
     }
 }
     
