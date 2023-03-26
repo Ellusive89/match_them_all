@@ -9,21 +9,21 @@ const gameContainer = document.getElementById("game-box");
 
 // card list array
 const cardList = [
-    {name: "bee", image: "assets/images/bee.png"},
-    {name: "cat", image: "assets/images/cat.png"},
-    {name: "corgi", image: "assets/images/corgi.png"},
-    {name: "cow", image: "assets/images/cow.png"},
-    {name: "elephant", image: "assets/images/elephant.png"},
-    {name: "fox", image: "assets/images/fox.png"},
-    {name: "horse", image: "assets/images/horse.png"},
-    {name: "lama", image: "assets/images/lama.png"},
-    {name: "octopus", image: "assets/images/octopus.png"},
-    {name: "panda", image: "assets/images/panda.png"},
-    {name: "pig", image: "assets/images/pig.png"},
-    {name: "racoon", image: "assets/images/racoon.png"},
-    {name: "sloth", image: "assets/images/sloth.png"},
-    {name: "unicorn", image: "assets/images/unicorn.png"},
-    {name: "whale", image: "assets/images/whale.png"}
+    {name: "bee", image: "assets/images/bee.png", alt: "little bee"},
+    {name: "cat", image: "assets/images/cat.png", alt: "sitting cat"},
+    {name: "corgi", image: "assets/images/corgi.png", alt: "dog of corgi breed"},
+    {name: "cow", image: "assets/images/cow.png", alt: "cute cow"},
+    {name: "elephant", image: "assets/images/elephant.png", alt: "blue elephant"},
+    {name: "fox", image: "assets/images/fox.png", alt: "little fox"},
+    {name: "horse", image: "assets/images/horse.png", alt: "brown horse"},
+    {name: "lama", image: "assets/images/lama.png", alt: "white lama"},
+    {name: "octopus", image: "assets/images/octopus.png", alt: "purple octopus"},
+    {name: "panda", image: "assets/images/panda.png", alt: "sleeping panda"},
+    {name: "pig", image: "assets/images/pig.png", alt: "cute pig"},
+    {name: "racoon", image: "assets/images/racoon.png", alt: "little racoon"},
+    {name: "sloth", image: "assets/images/sloth.png", alt: "sloth hanging upside down from a branch"},
+    {name: "unicorn", image: "assets/images/unicorn.png", alt: "unicorn"},
+    {name: "whale", image: "assets/images/whale.png", alt: "whale with a unicorn-like horn"}
 ];
 
 let cardDeck;
