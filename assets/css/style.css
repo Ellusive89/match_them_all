@@ -176,7 +176,7 @@ button:hover {
 
 .popup-box p {
     font-size: 200%;
-    margin-bottom: bona nova, sans-serif;
+    font-family: bona nova, sans-serif;
     color: #0a1b18;
     text-align: center;
     margin-bottom: 10px;
