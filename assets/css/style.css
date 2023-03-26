@@ -201,6 +201,7 @@ button:hover {
 
 @media screen and (max-width: 800px) {
     .game {
+        top: 70%;
         margin-top: 10px;
     }
 
@@ -223,7 +224,7 @@ button:hover {
 
     h1 {
         font-size: 300%;
-        padding-top: 50px;
+        padding-top: 10px;
     }
     
     p {
