@@ -81,12 +81,21 @@ function createBoard() {
 // creating function for flipping sides of the game cards
 function flipCard() {
     if (this === cardChosen[0]) return;
+    if (cardChosen.length >= 2) return;
+
     this.classList.add('flip');
     cardChosen.push(this);
     cardChosenId.push(this.dataset.name);
 
     if (cardChosen.length === 2) {
-        setTimeout(checkForMatch, 200);
+        gameContainer.classList.add('no-click');
+
+        setTimeout(() => {
+          checkForMatch();
+
+          gameContainer.classList.remove('no-click');
+      }, 200);
+
     }
 }
 
@@ -137,15 +146,20 @@ function checkForMatch() {
 //function to show position of all the cards on the board 
 function showAllCards() {
     const cards = document.querySelectorAll('.memory-card');
+    gameContainer.classList.add('no-click');
     cards.forEach(card => {
       card.classList.add('flip');
     });
+
     setTimeout(() => {
       cards.forEach(card => {
         card.classList.remove('flip');
       });
+      gameContainer.classList.remove('no-click');
+      updateTimer();
+        timer = setInterval(updateTimer, 1000);
     }, 2000);
-  }
+}
 
 // function for counting how long it took to match all cards
 function updateTimer() {
@@ -170,7 +184,6 @@ startButton.addEventListener('click', () => {
     gameDiv.style.display = "flex";
     startButton.classList.add('hide');
     stopButton.classList.remove('hide');
-    timer = setInterval(updateTimer, 1000);
 });
 
 stopButton.addEventListener('click', () => {

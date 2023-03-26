@@ -100,7 +100,11 @@ button:hover {
 
 .shake {
     animation-name: shake;
-  }
+}
+
+.no-click {
+    pointer-events: none;
+}
 
   @keyframes shake {
     0% { transform: translateX(0); }
