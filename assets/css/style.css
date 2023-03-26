@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #4edabd;
+    background-color: #bcd8e3;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -50,7 +50,7 @@ button.hide {
 
 button:hover {
     transform: scale(1.1);
-    color: #dA4e6b;
+    color: #70b879;
     background-color: #0a1b18;
 }
 
@@ -65,7 +65,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     border: 5px solid #0a1b18;
-    background-color: blanchedalmond;
+    background-color: #aad9a5;
     padding: 10px;
     margin-top: 50px;
     overflow: hidden;
@@ -155,7 +155,7 @@ button:hover {
   }
 
   .popup-box {
-    background-color: #fff;
+    background-color: #dff6ca;
     padding: 20px;
     border: 5px solid #0a1b18;
     border-radius: 5px;
@@ -192,7 +192,7 @@ button:hover {
   
   #popup-close-btn:hover {
     transform: scale(1.1);
-    color: #dA4e6b;
+    color: #70b879;
     background-color: #0a1b18;
 }
 
