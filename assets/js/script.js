@@ -100,9 +100,13 @@ function checkForMatch() {
         cardTwo.removeEventListener('click', flipCard);
         cardsWon.push(cardOne);
         cardsWon.push(cardTwo);
-    } else {
-        cardOne.classList.remove('flip');
-        cardTwo.classList.remove('flip');
+    } else { // adding shake effect to the cards that are not a match
+        cardOne.classList.add('shake');
+        cardTwo.classList.add('shake');
+        setTimeout(() => {
+          cardOne.classList.remove('flip', 'shake');
+          cardTwo.classList.remove('flip', 'shake');
+         }, 400);
     }
 
     cardChosen = [];

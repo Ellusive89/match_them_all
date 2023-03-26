@@ -89,7 +89,23 @@ button:hover {
     position: relative;
     perspective: 1000px;
     cursor: pointer;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
 }
+
+.shake {
+    animation-name: shake;
+  }
+
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px) rotate(-5deg); }
+    50% { transform: translateX(10px) rotate(5deg); }
+    75% { transform: translateX(-10px) rotate(-5deg); }
+    100% { transform: translateX(0); }
+  }
+  
 
 .memory-card .front-face {
     transform: rotateY(-180deg);
