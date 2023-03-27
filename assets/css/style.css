@@ -158,7 +158,6 @@ button:hover {
 }
 
 #popup-message {
-    position: fixed;
     display: none;
     justify-content: center;
     align-items: center;
