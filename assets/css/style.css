@@ -25,6 +25,13 @@ p {
     color: #0a1b18;
 }
 
+#match-them {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #0a1b18;
+    margin-top: 10px;
+}
+
 div {
     font-family: bona nova, sans-serif;
     font-size: 110%;
@@ -147,7 +154,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh;
+    height: 20vh;
 }
 
 #popup-message {
@@ -273,6 +280,13 @@ button:hover {
     
     div {
         font-size: 100%;
+    }
+
+    #match-them {
+        width: 150px;
+        height: 150px;
+        margin-top: 10px;
+        border: 3px solid #0a1b18;
     }
 }
     

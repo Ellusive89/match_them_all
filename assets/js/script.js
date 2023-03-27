@@ -4,6 +4,7 @@ const startButton = document.getElementById("start");
 const stopButton = document.getElementById("stop");
 const gameDiv = document.querySelector(".game");
 const gameContainer = document.getElementById("game-box");
+const matchImage = document.getElementById("match-them");
 
 // card list array
 const cardList = [
@@ -181,6 +182,7 @@ startButton.addEventListener('click', () => {
     gameDiv.style.display = "flex";
     startButton.classList.add('hide');
     stopButton.classList.remove('hide');
+    matchImage.style.display = "none";
 });
 
 stopButton.addEventListener('click', () => {
