@@ -24,9 +24,7 @@ The front page features an interactive start button that allows users to begin t
 - __Game Area__
 The game area includes a set of flipping cards that reveal different images when clicked, a stop button that allows players to end the game early, and a counter that tracks the number of moves and time elapsed to add a competitive element to the game. These features are carefully designed and positioned to enhance the game experience and provide players with an enjoyable and engaging challenge.
 ![Game Area](https://github.com/Ellusive89/match_them_all/blob/main/media/matching-cards.png)
-
 ![Back Side Of The Cards](https://github.com/Ellusive89/match_them_all/blob/main/media/back-side-card.png)
-
 ![Score](https://github.com/Ellusive89/match_them_all/blob/main/media/move-and-time.png)
 
 - __Pop Up Message__
@@ -63,7 +61,7 @@ I have extensively tested the website to ensure it is functional and responsive.
 
 - __CSS Validation:__
 
-![CSS](https://github.com/Ellusive89/match_them_all/blob/main/media/css_validator.png)
+![CSS](https://github.com/Ellusive89/match_them_all/blob/main/media/css-validator.png)
 
 ## Deployment
 
@@ -104,7 +102,7 @@ GitHub for version control and collaboration.
 
 - __Adding new levels with increasing difficulty__
 - __Introducing different themes and card designs__
-- __Implementing best score board__
+- __Implementing leader board__
 - __Adding sound effects and music for a more immersive experience__
 I greatly appreciate all feedback and suggestions from players, as they help guide my development efforts and ensure that I am providing the best possible experience for my users.
 
